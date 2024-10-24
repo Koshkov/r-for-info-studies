@@ -21,6 +21,7 @@ factbook_df<-tuesdata$cia_factbook
 # We can use the view function to look at the data in an Excel style table
 View(tuesdata$cia_factbook)
 
+# The %>% or 'pipe' symbol allows us to 
 factbook_df %>% glimpse()
 factbook_df %>% summary()
 
@@ -32,10 +33,10 @@ factbook_df<-factbook_df %>%
 
 map.base<-map_data("world") 
 
-View(map.base)
-
+# We can create a simple map of the world using ggplot.
+# ggplot is a function that allows us to quickly make robust charts.
 map.base %>% 
-    filter(region != "Antarctica")%>%
+    filter(region != "Antarctica")%>% # Remove Antarctica 
     ggplot(
         aes(x=long, y=lat)
     )+

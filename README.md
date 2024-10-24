@@ -8,8 +8,12 @@ Before starting any of the weekly activates, make sure to visit the
 [quick start](/r-for-info-studies/quickstart.html) guide to install all of the necessary software
 to complete these projects!
 
-## Weekly Activities
+# Weekly Activities
 ---
-
-* [Week 1](/r-for-info-studies/week1-2024-10-24.html): visualizing geographic data.
-
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
