@@ -1,12 +1,26 @@
-library(tidyverse)
+#
+# Week 1 Activity
+# Visualizing Geographic Data
+# 2024-10-24
+#
+####################
 
+# R 101
+###################
+# - Any line that begins with a '#' is a comment and will not be interpreted as code
+# - The arrow symbol '<-' is called the assignment operater 
 
-tuesdata<-tidytuesdayR::tt_load("2024-10-22")
+# The library function loads tidyverse into our environment and allows us to access
+# its functions
+library(tidyverse) 
 
-# Summarise data
+# The following line pulls in data from the Tidy Tuesday Repository
+tuesdata<-tidytuesdayR::tt_load("2024-10-22") 
+factbook_df<-tuesdata$cia_factbook
+
+# We can use the view function to look at the data in an Excel style table
 View(tuesdata$cia_factbook)
 
-factbook_df<-tuesdata$cia_factbook
 factbook_df %>% glimpse()
 factbook_df %>% summary()
 
