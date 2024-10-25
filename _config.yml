@@ -6,5 +6,5 @@ plugins:
 title: "R for Information Studies"
 description: "Introduction to R"
 
-baseurl: "/r-for-info-studies/"
-url: "https://username.github.io/"
+baseurl: /r-for-info-studies/
+url: https://koshkov.github.io/
