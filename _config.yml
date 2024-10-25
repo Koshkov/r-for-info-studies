@@ -4,4 +4,6 @@ plugins:
 
 
 title: "R for Information Studies"
-description: "Introduction"
+description: "Introduction to R"
+
+baseurl: "/r-for-info-studies"
