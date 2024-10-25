@@ -8,3 +8,6 @@ description: "Introduction to R"
 
 baseurl: /r-for-info-studies/
 url: https://koshkov.github.io/
+
+header_pages:
+  - quickstart.md
